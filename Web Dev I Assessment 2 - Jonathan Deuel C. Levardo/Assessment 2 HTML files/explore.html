@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Planetarium | Explore Page</title>
+    <link rel="Stylesheet" href="../Assessment 2 Stylesheets/A2 Explore Page Stylesheet.css">
+
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/0ac6f660bf.js" crossorigin="anonymous"></script>
+
+    <!--JavaScript files-->
+    <script src="../Assessment 2 JavaScript files/Navigation.js" defer></script>
+    <script src="../Assessment 2 JavaScript files/Scroll Animation.js" defer></script>
+</head>
+<body>
+        
+<!--HEADER SECTION-->
+<header>
+    <!--Navigation Bar-->
+    <nav>
+        <!--WEBSITE LOGO-->
+        <div class="Website-logo">
+            <h1>Big Planetarium</h1> 
+        </div>
+
+        <!--Navbar options-->
+        <!--id for aria-controls, class for styling, attribute for js file-->
+        <ul id="navbar" class="primary-nav" data-visible="false">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/Web Dev I Assessment 2 - Jonathan Deuel C. Levardo/Assessment 2 HTML files/explore.html">Explore</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+
+        <!--Menu button (Mobile size)-->
+        <!--aria-controls based on id, class for styling, attribute for js file, label for screen reader-->
+        <button aria-controls="navbar" class="mobile-menu-button" aria-expanded="false" aria-label="Mobile menu button">
+            <span class="sr-only"><i class="fa-solid fa-bars"></i></span>
+        </button>
+    </nav>
+</header>
+
+<!--MAIN CONTENT-->
+<main>
+
+    <!--PAGE TITLE-->
+    <div class="explore-title">
+        <h2 class="hidden">Explore Our Galaxy</h2>
+    </div>
+
+    <!--EXPLORE SECTION-->
+    <section class="explore-sect">
+
+        <!--Search bar content-->
+        <form class="hidden">
+            <label for="search-bar"><h3>Search</h3></label>
+
+            <!-- Search bar and button -->
+            <div class="search-flex">
+                <input type="search" id="search-bar" name="search-bar" placeholder="First landing on the moon...">
+                <button class="button-select-anim" aria-label="Find search results"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </form> 
+
+            <!--Featured articles heading-->
+        <div class="featured-articles-heading hidden">
+            <h2>Featured Articles</h2>
+            <button class="button-select-anim"><b>See More</b></button>
+        </div>
+    
+        <!--Flexbox for featured articles-->
+        <div class="explore-grid">
+
+            <!--Featured article Grid (Solar system)-->
+            <div class="featured-article-grid hidden">
+                <!--Solar System image-->
+                <img src="../Assessment 2 Images/pexels-zelch-12491775.jpg" alt="Solar System">
+
+                <!--Solar System description-->
+                <h3>SOLAR SYSTEM</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <button class="button-select-anim"><b>Learn More</b></button>
+            </div>
+
+            <!--Featured article Grid (Mars)-->
+            <div class="featured-article-grid hidden">
+                <!--Mars image-->
+                <img src="../Assessment 2 Images/pexels-zelch-20337601.jpg" alt="Mars">
+
+                <!--Mars description-->
+                <h3>MARS</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <button class="button-select-anim" onclick="toPlanetPage()">
+                    <b>Learn More</b>
+                </button>
+            </div>
+
+            <!--Featured article Grid (Moon)-->
+            <div class="featured-article-grid hidden">
+                <!--Moon image-->
+                <img src="../Assessment 2 Images/pexels-photographybuse-20220996.jpg" alt="Moon">
+
+                <!--Moon description-->
+                <h3>MOON</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <button class="button-select-anim"><b>Learn More</b></button>
+            </div>
+            
+            <!--Featured article Grid (Comets)-->
+            <div class="featured-article-grid hidden">
+                <!--Comets image-->
+                <img src="../Assessment 2 Images/pexels-scott-lord-564881271-20891449.jpg" alt="Comets">
+
+                <!--Comets description-->
+                <h3>COMETS</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <button class="button-select-anim"><b>Learn More</b></button>
+            </div>
+
+            <!--Featured article Grid (Satellites)-->
+            <div class="featured-article-grid hidden">
+                <!--Satellite image-->
+                <img src="../Assessment 2 Images/pexels-pixabay-41006.jpg" alt="Satellites">
+
+                <!--Satellite description-->
+                <h3>SATELLITES</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <button class="button-select-anim"><b>Learn More</b></button>
+            </div>
+
+            <!--Featured article Grid (Nebula)-->
+            <div class="featured-article-grid hidden">
+                <!--Nebula image-->
+                <img src="../Assessment 2 Images/pexels-scott-lord-564881271-36954901.jpg" alt="Nebula">
+
+                <!--Nebula description-->
+                <h3>NEBULA</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <button class="button-select-anim"><b>Learn More</b></button>
+            </div>            
+
+        </div>
+    </section>
+
+</main>
+
+<!--FOOTER SECTION-->
+<footer>
+    <p><b>Big Planetarium 2026, All Rights Reserved</b></p>
+</footer>
+
+</body>
+</html>

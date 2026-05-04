@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Planetarium | Explore Page</title>
+    <link rel="Stylesheet" href="../Assessment 2 Stylesheets/A2 Planet Page Stylesheet.css">
+
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/0ac6f660bf.js" crossorigin="anonymous"></script>
+
+    <!--JavaScript files-->
+    <script src="../Assessment 2 JavaScript files/Navigation.js" defer></script>
+    <script src="../Assessment 2 JavaScript files/Scroll Animation.js" defer></script>
+</head>
+<body>
+    
+<!--HEADER SECTION-->
+<header>
+    <!--Navigation Bar-->
+    <nav>
+        <!--WEBSITE LOGO-->
+        <div class="Website-logo">
+            <h1>Big Planetarium</h1> 
+        </div>
+
+        <!--Navbar options-->
+        <!--id for aria-controls, class for styling, attribute for js file-->
+        <ul id="navbar" class="primary-nav" data-visible="false">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/Web Dev I Assessment 2 - Jonathan Deuel C. Levardo/Assessment 2 HTML files/explore.html">Explore</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+
+        <!--Menu button (Mobile size)-->
+        <!--aria-controls based on id, class for styling, attribute for js file, label for screen reader-->
+        <button aria-controls="navbar" class="mobile-menu-button" aria-expanded="false" aria-label="Mobile menu button">
+            <span class="sr-only"><i class="fa-solid fa-bars"></i></span>
+        </button>
+    </nav>
+</header>
+
+<!--PAGE TITLE-->
+<div class="planet-title">
+
+    <!--Back button-->
+    <button class="button-select-anim hidden" onclick="backToExplorePage()">
+        <b> <i class="fa-solid fa-caret-left"></i> Back </b>
+    </button>
+    
+    <h2 class="hidden">Mars</h2>
+
+</div>
+
+<!--MAIN CONTENT-->
+<main>
+    <section class="planet-content-sect">
+
+        <div class="mini-facts-row">
+
+            <!--Distance-->
+            <div class="mini-facts hidden">
+                <i class="fa-solid fa-ruler"></i> <!--Distance icon-->
+                <div class="facts-description">
+                    <p class="fact-heading">Distance from sun</p>
+                    <p class="fact-text">228 million km</p>
+                </div>
+            </div>
+
+            <!--Length of day-->
+            <div class="mini-facts hidden">
+                <i class="fa-solid fa-clock"></i> <!--Time icon-->
+                <div class="facts-description">
+                    <p class="fact-heading">Length of day</p>
+                    <p class="fact-text">24h 39m</p>
+                </div>
+            </div>
+
+            <!--Temperature-->
+            <div class="mini-facts hidden">
+                <i class="fa-solid fa-temperature-three-quarters"></i> <!--Temperature icon-->
+                <div class="facts-description">
+                    <p class="fact-heading">Average Temperature</p>
+                    <p class="fact-text">70°F | 20°C</p>
+                </div>
+            </div>
+
+            <!--Gravity-->
+            <div class="mini-facts hidden">
+                <i class="fa-solid fa-angles-down"></i> <!--Gravity icon-->
+                <div class="facts-description">
+                    <p class="fact-heading">Gravity</p>
+                    <p class="fact-text">3.721 m/s²</p> 
+                </div>
+            </div>
+
+        </div>
+
+        <p class="article-paragraph hidden">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae 
+        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean 
+        sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis 
+        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti 
+        sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        
+        <p class="article-paragraph hidden">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae 
+        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean 
+        sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis 
+        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti 
+        sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+
+    </section>
+</main>
+
+<!--FOOTER SECTION-->
+<footer>
+    <p><b>Big Planetarium 2026, All Rights Reserved</b></p>
+</footer>
+
+</body>
+</html>
