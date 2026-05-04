@@ -20,11 +20,11 @@ navToggle.addEventListener("click", () => {
 
 // NAVIGATION VIA BUTTONS
 function toExplorePage() {
-    document.location='/Web Dev I Assessment 2 - Jonathan Deuel C. Levardo/Assessment 2 HTML files/explore.html'
+    document.location='../Assessment 2 HTML files/explore.html'
 }
 
 function toPlanetPage() {
-    document.location='/Web Dev I Assessment 2 - Jonathan Deuel C. Levardo/Assessment 2 HTML files/planet.html'
+    document.location='../Assessment 2 HTML files/planet.html'
 }
 
 function backToExplorePage() {
