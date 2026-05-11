@@ -150,7 +150,7 @@ div.milky-way-container {
 }
 
 /*MILKY WAY SECTION and EXPLORE SECTION images*/
-section.milky-way-sect img,
+section.milky-way-sect video,
 div.featured-article-grid img {
     width: 100%; /*Max width is grid's max-width*/
     border-radius: 25px;
@@ -162,8 +162,9 @@ div.featured-article-grid img {
 }
 
 /*Specific styling for MILKY SECTION image*/
-section.milky-way-sect img {
+section.milky-way-sect video {
     max-width: 50rem;
+    height: 33rem;
 }
 
 /*Flexbox for Milky Way text*/
@@ -441,8 +442,9 @@ footer {
         gap: 1.5rem;
     }
 
-    section.milky-way-sect img {
+    section.milky-way-sect video {
         max-width: 100%;
+        height: auto;
     }
 
 }
